@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color:aquamarine;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyze Sentences</title>
+    
+</head>
+<body>
+    <h1 style="font-size:30px;">Sentences from Most Negative to Most Positive</h1> 
+    <u1 style="font-size:30px;"><!--u1 is unordered list-->
+        {% for sentence in sorted_statements %} <!--% is used for for loops (Flask)-->
+            <li>{{ sentence }}</li><!--list-->
+        {% endfor %}
+    </u1>
+    <a href="/" style="font-size:30px;">Back</a>
+</body>
+</html>
